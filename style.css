@@ -1,0 +1,691 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&family=Cookie&family=EB+Garamond:ital,wght@0,500;1,500&family=Lobster+Two:ital@1&family=Lora:ital@1&family=Poppins&family=Raleway:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  /* padding: 15px; */
+}
+/* navbar part */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title h2 {
+  font-size: 1.8rem;
+}
+
+#nav-toggler {
+  display: none;
+}
+
+.nav-icon {
+  display: none;
+}
+
+.card-icon {
+  color: black;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links ul li {
+  list-style: none;
+  padding: 20px 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  padding: 20px 15px;
+  font-size: 1.09rem;
+  color: black;
+}
+
+/* navbar part */
+
+/* first part */
+.firstpart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.firstpart-content {
+  flex: 1;
+}
+
+.firstpart-content h1 {
+  font-size: 52px;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1px;
+}
+.typing {
+  white-space: nowrap;
+  position: relative;
+  color: transparent;
+}
+
+.typing::after {
+  content: "Influencer";
+  color: blueviolet;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  animation: typing 6s linear infinite;
+}
+
+@keyframes typing {
+  0% {
+    content: "|";
+  }
+  5% {
+    content: "I|";
+  }
+  10% {
+    content: "In|";
+  }
+  15% {
+    content: "Inf|";
+  }
+  20% {
+    content: "Infl|";
+  }
+  25% {
+    content: "Influ|";
+  }
+  30% {
+    content: "Influe|";
+  }
+  35% {
+    content: "Influen|";
+  }
+  40% {
+    content: "Influenc|";
+  }
+  45% {
+    content: "Influence|";
+  }
+  50% {
+    content: "Influencer|";
+  }
+  51%,
+  54% {
+    content: "Influencer|";
+  }
+  55% {
+    content: "Influence|";
+  }
+  60% {
+    content: "Influenc|";
+  }
+  65% {
+    content: "Influen|";
+  }
+  70% {
+    content: "Influe|";
+  }
+  75% {
+    content: "Influ|";
+  }
+  80% {
+    content: "Infl|";
+  }
+
+  85% {
+    content: "Infl|";
+  }
+  90% {
+    content: "Inf|";
+  }
+  95% {
+    content: "In|";
+  }
+  98% {
+    content: "I|";
+  }
+  100% {
+    content: "|";
+  }
+}
+
+.firstpart-content p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.firstpart-content a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 40px;
+  background-color: blueviolet;
+  margin-top: 20px;
+  color: aliceblue;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: transform 0.3s ease-in;
+}
+.firstpart-content a:hover {
+  transform: scale(1.055);
+}
+
+.firstpart-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.firstpart-image img {
+  transition: all 0.5s linear;
+}
+
+.firstpart-image img:hover {
+  transform: rotateY(-180deg);
+  transform-origin: top bottom;
+}
+
+/* first part */
+
+/* logo-part */
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 40px;
+  margin-bottom: 80px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-image: linear-ingridient(skyblue, lightsteelblue) 1;
+}
+
+/* logo-part */
+
+/* popular collection */
+
+.popular-collection {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.popular-collection h1 {
+  font-size: 36px;
+  padding: 15px 0;
+  margin-bottom: 30px;
+  font-family: "Raleway", sans-serif;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 130px;
+  grid-row-gap: 20px;
+  place-items: center;
+  text-align: justify;
+  width: 100%;
+}
+
+.item:hover {
+  transform: scale(1.055);
+}
+
+.item {
+  width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 12px 4px rgba(0, 0, 0, 0.30);
+  transition: transform 0.3s ease-in;
+}
+.item img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.item h2 {
+  font-size: 1.7rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.item p {
+  font-size: 1.3rem;
+  padding-bottom: 5px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+.rating p {
+  font-size: 12px;
+}
+
+.rating > .ratings {
+  font-size: 12px;
+  color: gold;
+}
+
+.item .service {
+  font-size: 18px;
+  padding-top: 5px;
+  color: lightslategray;
+}
+
+.see-more {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+}
+
+.see-more a {
+  text-decoration: none;
+  color: blueviolet;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* popular collection */
+
+/* feaure-part start */
+
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 30px;
+  padding: 20px;
+}
+
+.feature-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.feature-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.feature-content {
+  flex: 1;
+}
+
+.feature-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1px;
+}
+.feature-content p {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+.feature-content a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 40px;
+  background-color: blueviolet;
+  margin-top: 20px;
+  color: aliceblue;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: transform 0.3s ease-in;
+}
+
+.feature-content a:hover {
+  transform: scale(1.055);
+}
+
+/* footer part */
+
+footer {
+  background-color: blueviolet;
+  color: aliceblue;
+  padding: 25px 0;
+  text-align: center;
+  width: 100%;
+}
+footer h2 {
+  font-size: 1.5rem;
+}
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.footer-link a {
+  font-size: 12px;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: blueviolet;
+}
+/* footer part */
+
+/* media part starts here */
+
+/* For Phone */
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .navbar {
+    padding: 10px;
+    position: relative;
+    justify-content: center;
+    gap: 150px;
+  }
+
+  #nav-toggler:checked ~ .nav-links {
+    transform: translateX(0);
+  }
+
+  .nav-icon {
+    display: block;
+    justify-self: flex-end;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    width: 50%;
+    align-items: center;
+    background-color: blueviolet;
+    transform: translateX(400px);
+    transition: transform 0.2s linear;
+  }
+
+  .nav-links ul li {
+    padding: 10px 5px;
+  }
+
+  .nav-links ul li a {
+    color: aliceblue;
+  }
+
+  .firstpart-content {
+    text-align: center;
+  }
+  .title-name h2 {
+    font-size: 1.3rem;
+  }
+  .nav-links ul {
+    flex-direction: column;
+  }
+
+  .firstpart {
+    flex-direction: column-reverse;
+    padding: 10px;
+    margin-bottom: 100px;
+  }
+  .firstpart-content h1 {
+    font-size: 30px;
+  }
+  .firstpart-content p {
+    font-size: 14px;
+  }
+  .firstpart-content a {
+    font-size: 1rem;
+  }
+  .firstpart-image img {
+    width: 100%;
+  }
+  /* logo-part */
+
+  .logo-part {
+    flex-wrap: wrap;
+    padding: 5px;
+  }
+
+  /* logo-part */
+
+  /*Popular part */
+
+  .popular-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .item {
+    width: 90%;
+  }
+
+  .item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  .item p {
+    font-size: 1.1rem;
+  }
+  .rating p {
+    font-size: 10px;
+  }
+
+  .item .service {
+    font-size: 15px;
+  }
+
+  .see-more {
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* popular section */
+
+  /* feaure-part start */
+
+  .feature {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature-image img {
+    width: 100%;
+  }
+  .feature p {
+    text-align: justify;
+  }
+
+  .feature-content h2 {
+    font-size: 1.7rem;
+  }
+
+  .feature-content a {
+    font-size: 1rem;
+  }
+
+  /* footer part */
+
+  footer {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  footer h2 {
+    font-size: 1.2rem;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+}
+
+/* responsive for ipad */
+
+@media (min-width: 481px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .title h2 {
+    font-size: 1.8rem;
+  }
+
+  .firstpart {
+    flex-direction: column-reverse;
+    padding: 15px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  .firstpart-content h1 {
+    font-size: 42px;
+  }
+  .firstpart-content p {
+    font-size: 1.1rem;
+  }
+  .firstpart-content a {
+    font-size: 1.3rem;
+  }
+  .firstpart-image img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  /* logo-part */
+
+  .logo-part {
+    flex-wrap: wrap;
+    padding: 40px;
+  }
+
+  /* logo-part */
+
+  /*Popular part */
+
+  .popular-section h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    grid-column-gap: 50px;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  .item h2 {
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+  }
+  .item p {
+    font-size: 1.2rem;
+  }
+  .rating p {
+    font-size: 12px;
+  }
+
+  .item .service {
+    font-size: 1.1rem;
+  }
+
+  .see-more {
+    justify-content: center;
+  }
+
+  .see-more a {
+    font-size: 1.3rem;
+  }
+
+  /* popular section */
+
+  /* feaure-part start */
+
+  .feature {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .feature-image img {
+    width: 90%;
+  }
+
+  .feature-content h2 {
+    font-size: 2rem;
+  }
+
+  .feature-content p {
+    font-size: 1.2rem;
+  }
+
+  .feature-content a {
+    font-size: 1.4rem;
+  }
+
+  /* footer part */
+
+  footer {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  footer h2 {
+    font-size: 1.4rem;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
+
+/* footer part */
+
+/* responsive for ipad */
+
+/* responsive for larger than ipad but less than 1200px  */
+
+@media (min-width: 993px) and (max-width: 1199px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .card {
+    grid-column-gap: 20px;
+  }
+}
+
+/* responsive for larger than ipad but less than 1200px  */
